@@ -18,7 +18,11 @@ public class EmployeesController : Controller
     {
         return View(await _context.Employees.ToListAsync());
     }
-
+  // GET: EMPLOYEES
+    public async Task<IActionResult> Index1()    
+    {
+        return View(await _context.Employees.ToListAsync());
+    }
     // GET: EMPLOYEES/Details/5
     public async Task<IActionResult> Details(int? id)
     {
